@@ -1,0 +1,87 @@
+.home-page {
+  padding: 20px;
+}
+
+.home-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 45%;
+  transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+}
+
+.metric-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.metric-card p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.recent-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.recent-users,
+.recent-products {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.recent-data h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.recent-data ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-data ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.recent-data ul li:last-child {
+  border-bottom: none;
+}
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

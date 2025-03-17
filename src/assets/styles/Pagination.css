@@ -1,0 +1,33 @@
+.pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .pagination ul li {
+    margin: 0 5px;
+  }
+  
+  .pagination ul li button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination ul li button.active {
+    background-color: #6a11cb;
+    color: white;
+    border-color: #6a11cb;
+  }
+  
+  .pagination ul li button:hover {
+    background-color: #f4f7f6;
+  }
