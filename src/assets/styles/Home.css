@@ -1,5 +1,8 @@
+
+
 .home-page {
-  padding: 20px;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .home-page h1 {
@@ -11,8 +14,10 @@
 
 .metrics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 40px;
+  gap: 20px;
 }
 
 .metric-card {
@@ -21,7 +26,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 45%;
+  flex: 1;
+  min-width: 200px;
+  max-width: 45%;
   transition: transform 0.3s ease;
 }
 
@@ -44,8 +51,10 @@
 
 .recent-data {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
+  gap: 20px;
 }
 
 .recent-users,
@@ -54,7 +63,8 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 48%;
+  flex: 1;
+  min-width: 250px;
 }
 
 .recent-data h2 {
@@ -84,4 +94,31 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+@media (max-width: 475px) {
+  .metrics {
+    flex-direction: column;
+  }
+  
+  .metric-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .recent-data {
+    flex-direction: column;
+  }
+  
+  .recent-users,
+  .recent-products {
+    width: 100%;
+  }
+  
+  .chart-container {
+    height: 350px;
+    overflow: hidden;
+  }
 }

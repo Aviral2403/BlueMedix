@@ -1,16 +1,22 @@
-.pagination {
+
+  .pagination {
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
   .pagination ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    gap: 5px;
   }
   
   .pagination ul li {
-    margin: 0 5px;
+    margin: 0;
   }
   
   .pagination ul li button {
@@ -30,4 +36,15 @@
   
   .pagination ul li button:hover {
     background-color: #f4f7f6;
+  }
+  
+  @media (max-width: 480px) {
+    .pagination ul {
+      gap: 3px;
+    }
+    
+    .pagination ul li button {
+      padding: 4px 8px;
+      font-size: 0.875rem;
+    }
   }

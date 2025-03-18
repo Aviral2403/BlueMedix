@@ -11,7 +11,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [sortOrder, setSortOrder] = useState('High to Low');
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 5;
+  const productsPerPage = 8;
 
   // Get unique categories for the filter dropdown
   const categories = ['All', ...new Set(products.map((product) => product.category))];

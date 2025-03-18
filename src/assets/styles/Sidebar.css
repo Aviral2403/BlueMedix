@@ -1,4 +1,5 @@
-.sidebar {
+
+  .sidebar {
     width: 250px;
     height: 100vh;
     background: #2c3e50;
@@ -7,6 +8,8 @@
     left: -250px;
     transition: left 0.3s ease;
     z-index: 1000;
+    overflow-y: auto;
+    padding-top: 60px;
   }
   
   .sidebar.open {
@@ -43,4 +46,16 @@
   
   .sidebar ul li a:hover {
     color: #ffdd57;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      left: -100%;
+      padding-top: 60px;
+    }
+    
+    .sidebar.open {
+      left: 0;
+    }
   }

@@ -10,7 +10,7 @@ const Users = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOrder, setSortOrder] = useState('A-Z');
   const [currentPage, setCurrentPage] = useState(1);
-  const usersPerPage = 5;
+  const usersPerPage = 8;
 
   // Filter users by search term (handles spaces)
   const filteredUsers = users.filter((user) => {
